@@ -16,7 +16,6 @@ class LandingScreen extends StatefulWidget {
 class _LandingScreenState extends State<LandingScreen> {
   final TextEditingController controller = TextEditingController();
   final ScrollController scrollController = ScrollController();
-
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
