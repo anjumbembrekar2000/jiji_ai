@@ -93,7 +93,6 @@ class _LandingScreenState extends State<LandingScreen> {
 
                 const SizedBox(height: 20),
 
-                // Chat Area (Jiji reply only)
                 BlocBuilder<ChatBloc, ChatState>(
                   builder: (context, state) {
                     if (state.botReply == null) return const SizedBox();
@@ -210,7 +209,7 @@ class _LandingScreenState extends State<LandingScreen> {
                                                 shape: RoundedRectangleBorder(
                                                   borderRadius: BorderRadius.circular(10),
                                                 ),
-                                                padding: EdgeInsets.zero, // remove extra padding
+                                                padding: EdgeInsets.zero,
                                               ),
                                               child: const Text(
                                                 'Watch',
